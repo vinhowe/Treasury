@@ -1,0 +1,19 @@
+name: Treasury
+author: vinhowe
+version: 0.0.1
+main: Treasury
+api-version: "1.16"
+commands:
+  circulation:
+    description: Manage economy circulation.
+    usage: /<command> [add <amount>]
+    aliases: [ c, circ ]
+    permission: treasury.circulation
+  exchange:
+    description: Exchange gold in inventory for currency.
+    usage: /<command> <amount>
+    permission: treasury.exchange
+permissions:
+  treasury.*:
+    default: op
+    description: Give players with op everything by default
