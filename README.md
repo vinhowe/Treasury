@@ -3,7 +3,7 @@
 Spigot plugin for limiting and monitoring circulation of currency in a [Vault](https://github.com/MilkBowl/VaultAPI) economy.
 Allows players to exchange gold ingots for currency.
 
-I may make it possible to exchange other items for currency in the future. I chose gold because:
+I may make it possible to exchange other items for currency in the future, but I chose gold because:
 - It's rare enough. It is relatively difficult to find, but not so difficult that most players don't have it.
 - It's stable(ish). Gold ore can't be multiplied with fortune enchantments like diamond, making its value more stable.
   - Yes, there are other ways to get gold. If this is an issue for you, you may want to find ways to disable them or track which gold came from ore. This hasn't been a problem on my server yet, but I may end up adding configurable restrictions to this end.
