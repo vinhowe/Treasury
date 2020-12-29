@@ -24,3 +24,10 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Build jar
+      run: ./gradlew jar
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: Treasury jar
+        path: build/libs/
