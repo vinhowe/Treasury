@@ -52,7 +52,7 @@ class Treasury : JavaPlugin() {
             return config.get("gold-price") as Double? ?: 0.0
         }
 
-    private fun getCirculationValue(key: String, defaultValue: Any?): Any? {
+    public fun getCirculationValue(key: String, defaultValue: Any?): Any? {
         val circulationValue = circulationConfig.get(key)
         if (circulationValue == null) {
             setCirculationValue(key, defaultValue)
@@ -61,7 +61,7 @@ class Treasury : JavaPlugin() {
         return circulationValue
     }
 
-    private fun setCirculationValue(key: String, value: Any?) {
+    public fun setCirculationValue(key: String, value: Any?) {
         circulationConfig.set(key, value);
         circulationConfig.save(circulationPath)
     }
